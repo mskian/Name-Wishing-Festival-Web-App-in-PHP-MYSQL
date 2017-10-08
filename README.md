@@ -5,3 +5,7 @@ Create an Awesome Name Wishing Festival Wishes Web App in PHP and MYSQL - By San
 How to use - https://awts.in/2nBIPZh
 
 Support Forum - https://forum.hellboundbloggers.com/t/how-to-create-an-awesome-name-wishing-festival-web-app-in-php/299
+
+Contribute - git clone git@github.com:mskian/Name-Wishing-Festival-Web-App-in-PHP-MYSQL.git
+
+
