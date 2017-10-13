@@ -4,7 +4,7 @@
 Plugin Name: MSK Festival Wishes Web App
 Plugin URI: https://www.allwebtuts.com/festival-wishes-web-app/
 Description: Festival Wishes Web App - A PHP Plugin Which Helps us to Create an Awesome SEO Friendly Festival Event Wishing Web App with Custom Greeting Wishes Page.
-Version: 1.1
+Version: 1.2
 Author: Santhosh veer
 Author URI: https://www.mskian.com
 License: GPLv2 or later
@@ -16,8 +16,11 @@ include('db.php');
 if(isset($_POST['create-wish']))
 {
 
+//prevent sql injection
 $title=mysqli_real_escape_string($con,$_POST["title"]);
-$title=htmlentities($title);
+
+//prevent xss
+$title = htmlspecialchars($title,ENT_COMPAT);
 
 //friendly URL conversion
 function to_prety_url($str){
